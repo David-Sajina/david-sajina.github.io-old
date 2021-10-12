@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>David Šajina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="pics/fipu.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
+  <style>
+      p{font-family: 'Noto Sans Mono', monospace;}
+      ul { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a.p {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a.p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.p:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+a.current {
+    color:#baada7;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <a href="https://fipu.unipu.hr/"><img src="pics/fipu.png" alt="" width="10%"  style="float: left;padding-left:30px;" ></a>
+        <a href="https://unipu.hr/"><img src="pics/unipu.png" alt="" width="10%" style="float: left;padding-left:30px; "></a>
+  <h1>Osobna stranica</h1>
+  <p>Fakultet informatike Pula</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+        <br><br><br><br><br><br><br><br>
+        <img src="pics/menu-icon.png" alt="">
+        <br>
+        <br>
+        <a  id="index" href="index.html" class="p">Početna</a><br>
+        <a  id="kontakt" href="kontakt.html" class="p">kontakt</a>
+        
+        
+    </div>
+    <div class="col-sm-4">
+     <h3>David Šajina</h3>
+    <p>Student treće godine informatike u Puli sa ciljem da nauči programirati.</p>
+    <p>Trenutno se uči HTML, CSS i JS.</p>
+    <h3>HTML</h3>
+    <p>HTML je kratica za HyperText Markup Language, što znači prezentacijski jezik za izradu web stranica. Hipertekst dokument stvara se pomoću HTML jezika. 
+        HTML jezikom oblikuje se sadržaj i stvaraju se hiperveze hipertext dokumenta.</p>
+        <h3>CSS</h3>
+        <p>CSS je kratica od (eng.) Cascading Style Sheets. Radi se o stilskom jeziku,
+             koji se rabi za opis prezentacije dokumenta napisanog pomoću markup (HTML) jezika.</p>
+             <h3>JS</h3>
+             <p>JavaScript je skriptni programski jezik, koji se izvršava u web pregledniku na strani korisnika. Napravljen je da bude sličan Javi, zbog lakšega korištenja, ali nije objektno orijentiran kao Java, već se temelji na prototipu i tu prestaje svaka povezanost s programskim jezikom Java.</p>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <br>
+      <br><br>
+      <img src="pics/prof.png" alt="" style="border-radius: 50%;float:right;" width="70%">
+      <br>
+      <br>
+      <hr>
+            <p style="font-family: Arial;">User has yet to upload personal picture.</p>
+            <hr>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
