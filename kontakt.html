@@ -29,6 +29,17 @@ function Redirect()
        
   </script>
   <style>
+.but {
+    background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
       p{font-family: 'Noto Sans Mono', monospace;}
       ul { 
   margin: 150px auto 0; 
@@ -81,7 +92,7 @@ textarea{border:0;outline:0;}
 textarea{border-bottom: #baada7;
     border:1;
     outline:none!important;}
-
+.but:hover{border: 2.5px solid #b37171;}
   </style>
 </head>
 <body>
@@ -119,7 +130,7 @@ textarea{border-bottom: #baada7;
               <textarea rows="4" cols="42" id="multiLineInput" placeholder="Vaša poruka.."></textarea>
             </label> 
           </form><hr>
-        <button type="submit" onclick="alertt();">Pošalji</button>
+        <button class="but" type="submit" onclick="alertt();">Pošalji <img src="pics/right-arrow-1438234-1216195.png" width="8%" alt=""></button>
 
       </div>
     <div class="col-sm-4">
