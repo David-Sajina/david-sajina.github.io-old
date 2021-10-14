@@ -119,19 +119,19 @@ textarea{border-bottom: #baada7;
     <div class="col-sm-4">
         <p style="text-align:center;">Kontakt forma</p>
         <h2 style="text-align:center;">Pošalji poruku</h2><br><br>
-            <form></form>
-        <input  type="text" name="" id="" placeholder="Vaše ime i prezime..."><hr>
+            <form method="post" name="emailform" action="email.php">
+        <input  type="text" name="ip" id="" placeholder="Vaše ime i prezime..."><hr>
         
-        <input type="text" name="" id="" placeholder="Vaše email..."><hr>
-        <input type="text" name="" id="" placeholder="Naslov poruke..."><hr>
+        <input type="text" name="vemail" id="" placeholder="Vaše email..."><hr>
+        <input type="text" name="subject" id="" placeholder="Naslov poruke..."><hr>
         
             <label for="multiLineInput"> 
               
-              <textarea rows="4" cols="42" id="multiLineInput" placeholder="Vaša poruka.."></textarea>
+              <textarea rows="4" cols="42" name="poruka" id="multiLineInput" placeholder="Vaša poruka.."></textarea>
             </label> 
-          </form><hr>
+          <hr>
         <button class="but" type="submit" onclick="alertt();">Pošalji <img src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png" width="8%" alt=""></button>
-
+      </form>
       </div>
     <div class="col-sm-4">
       
