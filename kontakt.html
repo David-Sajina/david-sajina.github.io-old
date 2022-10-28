@@ -19,12 +19,12 @@
     });
   });
   function alertt() {
-  
+  alert("Poruka je uspješno poslana!");
   window.location="index.html";
 }
 function Redirect() 
     {  
-        window.location="https://david-sajina.github.io/index"; setTimeout('Redirect()', 2000);
+        window.location="index.html"; setTimeout('Redirect()', 2000);
     } 
        
   </script>
@@ -100,8 +100,8 @@ textarea{border-bottom: #baada7;
 <div class="jumbotron text-center">
     <a href="https://fipu.unipu.hr/"><img src="pics/fipu.png" alt="" width="10%"  style="float: left;padding-left:30px;" ></a>
         <a href="https://unipu.hr/"><img src="pics/unipu.png" alt="" width="10%" style="float: left;padding-left:30px; "></a>
-  <h1>Osobna stranica</h1>
-  <p>Fakultet informatike Pula</p> 
+  <h1>Personal page</h1>
+  <p>David Šajina</p> 
 </div>
   
 <div class="container">
@@ -111,29 +111,27 @@ textarea{border-bottom: #baada7;
         <img src="pics/menu-icon.png" alt="">
         <br>
         <br>
-        <a  id="index" href="https://david-sajina.github.io/index" class="p">Početna</a><br>
-        <a  id="kontakt" href="https://david-sajina.github.io/kontakt" class="p">kontakt</a>
+        <a  id="index" href="index.html" class="p">Home</a><br>
+        <a  id="kontakt" href="kontakt.html" class="p">Contact me</a>
         
         
     </div>
     <div class="col-sm-4">
-        <p style="text-align:center;">Kontakt forma</p>
-        <h2 style="text-align:center;">Pošalji poruku</h2><br><br>
-            <form action="https://formsubmit.co/david.sajina@gmail.com" method="POST">
-        <input  type="text" name="Ime i Prezime " id="" placeholder="Vaše ime i prezime..."><hr>
+        <p style="text-align:center;">Contact form</p>
+        <h2 style="text-align:center;">Send me a message :)</h2><br><br>
+            <form></form>
+        <input  type="text" name="" id="" placeholder="Your name and surname..."><hr>
         
-        <input type="text" name="Email " id="" placeholder="Vaše email..."><hr>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://david-sajina.github.io/index">
-        <input type="text" name="Naslov " id="" placeholder="Naslov poruke..."><hr>
+        <input type="text" name="" id="" placeholder="Your email..."><hr>
+        <input type="text" name="" id="" placeholder="Title of your message..."><hr>
         
             <label for="multiLineInput"> 
               
-              <textarea rows="4" cols="42" name="Poruka " id="multiLineInput" placeholder="Vaša poruka.."></textarea>
+              <textarea rows="4" cols="42" id="multiLineInput" placeholder="Your message.."></textarea>
             </label> 
-          <hr>
-        <button class="but" type="submit" onclick="Redirect();">Pošalji <img src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png" width="8%" alt=""></button>
-      </form>
+          </form><hr>
+        <button class="but" type="submit" onclick="alertt();">Send <img src="pics/right-arrow-1438234-1216195.png" width="8%" alt=""></button>
+
       </div>
     <div class="col-sm-4">
       
