@@ -10,7 +10,7 @@
  $naslov= $_POST['subject'];
  $message = $_POST['poruka'];
 
- $email_from = 'david.dapo.dd@gmail.com';
+ $email_from = 'david@gmail.com';
 
 	
 
@@ -21,7 +21,7 @@
      $headers = "From: $email_from \r\n";
 
      $headers .= "Reply-To: $visitor_email \r\n";
- mail("david.dapo.dd@gmail.com",$naslov,$email_body,$headers)
+ mail("david@gmail.com",$naslov,$email_body,$headers)
 ?>
 </body>
 </html>
