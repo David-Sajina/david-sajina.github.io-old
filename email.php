@@ -6,7 +6,7 @@
 <body>
 <?php
  $name = $_POST['ip'];
- $visitor_email = $_POST['vemail'];
+ $visitor_email = $_POST['email'];
  $naslov= $_POST['subject'];
  $message = $_POST['poruka'];
 

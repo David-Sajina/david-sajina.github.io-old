@@ -1,143 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>David Šajina</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="pics/fipu.png">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-  <script>
-  $(function(){
-    $('a').each(function() {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current');
-      }
-    });
-  });
-  function alertt() {
-  alert("Poruka je uspješno poslana!");
-  window.location="index.html";
-}
-function Redirect() 
-    {  
-        window.location="index.html"; setTimeout('Redirect()', 2000);
-    } 
-       
-  </script>
-  <style>
-.but {
-    background-color: white;
-  color: black;
-  border: 2px solid #555555;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;}
-      p{font-family: 'Noto Sans Mono', monospace;}
-      ul { 
-  margin: 150px auto 0; 
-  padding: 0; 
-  list-style: none; 
-  display: table;
-  width: 600px;
-  text-align: center;
-}
-li { 
-  display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
-}
-a.p {
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-a.p:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: rgb(0, 0, 0);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a.p:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
+	<head>
+		<title>David Šajina</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="pics/fipu.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script>
+			$(function () {
+				$("a").each(function () {
+					if ($(this).prop("href") == window.location.href) {
+						$(this).addClass("current");
+					}
+				});
+			});
+			function alertt() {
+				alert("Poruka je uspješno poslana!");
+				window.location = "index.html";
+			}
+			function Redirect() {
+				window.location = "index.html";
+				setTimeout("Redirect()", 2000);
+			}
+		</script>
+		<style>
+			.but {
+				background-color: white;
+				color: black;
+				border: 2px solid #555555;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+			p {
+				font-family: "Noto Sans Mono", monospace;
+			}
+			ul {
+				margin: 150px auto 0;
+				padding: 0;
+				list-style: none;
+				display: table;
+				width: 600px;
+				text-align: center;
+			}
+			li {
+				display: table-cell;
+				position: relative;
+				padding: 15px 0;
+			}
+			a.p {
+				color: rgb(0, 0, 0);
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0.15em;
 
-a.current {
-    color:#baada7;
-}
-input {border:0;outline:0;}
-input:focus {border-bottom: #baada7;
-    border:1;
-    outline:none!important;}
-textarea{border:0;outline:0;}
-textarea{border-bottom: #baada7;
-    border:1;
-    outline:none!important;}
-.but:hover{border: 2.5px solid #b37171;}
-  </style>
-</head>
-<body>
+				display: inline-block;
+				padding: 15px 20px;
+				position: relative;
+			}
+			a.p:after {
+				background: none repeat scroll 0 0 transparent;
+				bottom: 0;
+				content: "";
+				display: block;
+				height: 2px;
+				left: 50%;
+				position: absolute;
+				background: rgb(0, 0, 0);
+				transition: width 0.3s ease 0s, left 0.3s ease 0s;
+				width: 0;
+			}
+			a.p:hover:after {
+				width: 100%;
+				left: 0;
+			}
 
-<div class="jumbotron text-center">
-    <a href="https://fipu.unipu.hr/"><img src="pics/fipu.png" alt="" width="10%"  style="float: left;padding-left:30px;" ></a>
-        <a href="https://unipu.hr/"><img src="pics/unipu.png" alt="" width="10%" style="float: left;padding-left:30px; "></a>
-  <h1>Personal page</h1>
-  <p>David Šajina</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-        <br><br><br><br><br><br><br><br>
-        <img src="pics/menu-icon.png" alt="">
-        <br>
-        <br>
-        <a  id="index" href="index.html" class="p">Home</a><br>
-        <a  id="kontakt" href="kontakt.html" class="p">Contact me</a>
-        
-        
-    </div>
-    <div class="col-sm-4">
-        <p style="text-align:center;">Contact form</p>
-        <h2 style="text-align:center;">Send me a message :)</h2><br><br>
-            <form></form>
-        <input  type="text" name="" id="" placeholder="Your name and surname..."><hr>
-        
-        <input type="text" name="" id="" placeholder="Your email..."><hr>
-        <input type="text" name="" id="" placeholder="Title of your message..."><hr>
-        
-            <label for="multiLineInput"> 
-              
-              <textarea rows="4" cols="42" id="multiLineInput" placeholder="Your message.."></textarea>
-            </label> 
-          </form><hr>
-        <button class="but" type="submit" onclick="alertt();">Send <img src="pics/right-arrow-1438234-1216195.png" width="8%" alt=""></button>
+			a.current {
+				color: #baada7;
+			}
+			input {
+				border: 0;
+				outline: 0;
+			}
+			input:focus {
+				border-bottom: #baada7;
+				border: 1;
+				outline: none !important;
+			}
+			textarea {
+				border: 0;
+				outline: 0;
+			}
+			textarea {
+				border-bottom: #baada7;
+				border: 1;
+				outline: none !important;
+			}
+			.but:hover {
+				border: 2.5px solid #b37171;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<a href="https://fipu.unipu.hr/"
+				><img
+					src="pics/fipu.png"
+					alt=""
+					width="10%"
+					style="float: left; padding-left: 30px"
+			/></a>
+			<a href="https://unipu.hr/"
+				><img
+					src="pics/unipu.png"
+					alt=""
+					width="10%"
+					style="float: left; padding-left: 30px"
+			/></a>
+			<h1>Personal page</h1>
+			<p>David Šajina</p>
+		</div>
 
-      </div>
-    <div class="col-sm-4">
-      
-    </div>
-  </div>
-</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<br /><br /><br /><br /><br /><br /><br /><br />
+					<img src="pics/menu-icon.png" alt="" />
+					<br />
+					<br />
+					<a id="index" href="index.html" class="p">Home</a><br />
+					<a id="kontakt" href="kontakt.html" class="p">Contact me</a>
+				</div>
+				<div class="col-sm-4">
+					<p style="text-align: center">Contact form</p>
+					<h2 style="text-align: center">Send me a message :)</h2>
+					<br /><br />
+					<form
+						action="https://formsubmit.co/david.dapo.dd@gmail.com"
+						method="POST"
+					>
+						<input
+							type="text"
+							name="ip"
+							id=""
+							placeholder="Your name and surname..."
+						/>
+						<hr />
 
-</body>
+						<input type="text" name="email" id="" placeholder="Your email..." />
+						<hr />
+						<input
+							type="text"
+							name="subject"
+							id=""
+							placeholder="Title of your message..."
+						/>
+						<hr />
+
+						<label for="multiLineInput">
+							<textarea
+								name="poruka"
+								rows="4"
+								cols="42"
+								id="multiLineInput"
+								placeholder="Your message.."
+							></textarea>
+						</label>
+					</form>
+					<hr />
+					<button class="but" type="submit" onclick="alertt();">
+						Send
+						<img src="pics/right-arrow-1438234-1216195.png" width="8%" alt="" />
+					</button>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+	</body>
 </html>
